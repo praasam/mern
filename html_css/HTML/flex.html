@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        .flex-container{
+            background-color: rgb(244, 210, 170);
+            padding: 10px;
+            display: flex;
+            /* justify-content: space-between; */
+            /* justify-content: end; */
+            flex-wrap: wrap;
+            /* flex-direction:row-reverse; */
+            height: 250px;
+            align-items: flex-end;
+        }
+
+        .flex-container div{
+            background-color: rgb(229, 255, 203);
+            margin: 10px;
+            padding: 20px;
+            font-size: 20px;
+            width: 40px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-div">
+        <div class="flex-container">
+            <div>First</div>
+            <div>Second</div>
+            <div>Third</div>
+            <div>Fourth</div>
+            <div>Fifth</div>
+            <div>Sixth</div>
+            
+            
+        </div>
+    </div>
+</body>
+</html>

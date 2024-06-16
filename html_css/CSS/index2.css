@@ -1,0 +1,46 @@
+#div-1, #div-2, #p1{
+    color:cadetblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#p1::first-letter{
+    text-transform: uppercase;
+    color:red;
+    font-size: 50px;
+}
+
+#p1::first-line{
+    font-size: 30px;
+}
+
+h1::before{
+    content: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRezkhZEGyU-SbkR5X1RGxo8OxQFLfKonocyg&s");
+    height: 50px;
+    width: 500px;
+}
+
+h1::after{
+    content: "This is after content";
+    font-size: 10px;
+}
+
+#link1:link{
+    color: rgb(233, 57, 57);
+}
+#link1:visited{
+    color: rgb(206, 58, 58);
+}
+#link1:hover{
+    color: chartreuse;
+}
+
+input[type="text"]{
+    color: rgb(1, 6, 10);
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid rgb(164, 164, 235);
+    font-size: 20px;
+}

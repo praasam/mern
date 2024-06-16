@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    background-color: #f8f8f8;
+    box-shadow: 2px 2px whitesmoke;
+}
+
+.menu-btn{
+    margin-left: 10px;
+}
+
+.auth-btn{
+    margin-right: 10px;
+}
+
+#menu, #signup{
+    background-color: beige;
+    border-radius: 3px;
+    border: 1px solid black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#login{
+    background-color: rgb(255, 106, 0);
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 3px;
+    color: white;
+    border: none;
+    height: 20px;
+}
+
+.head{
+    display: flex;
+}
+
+#heading{
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10px;
+}
+
+#adv{
+    font-size: 80px;
+    font-family: 'Times New Roman', Times, serif;
+    z-index: 1;
+    position: relative;
+    margin: 0;
+}
+
+.advantages-section {
+    position: relative;
+}
+
+
+main{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex: 1;
+}
+
+.image-stack {
+    position: absolute;
+    bottom: 150%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.image-stack img {
+    position: absolute;
+    width: 150px;
+    height: 200px;
+    border: 2px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.image-stack img:nth-child(1) {
+    transform: rotate(-45deg);
+    z-index: 1;
+}
+
+.image-stack img:nth-child(2) {
+    transform: rotate(-30deg);
+    z-index: 2;
+}
+
+.image-stack img:nth-child(3) {
+    transform: rotate(-15deg);
+    z-index: 3;
+}
+
+.image-stack img:nth-child(4) {
+    transform: rotate(0deg);
+    z-index: 4;
+}
+
+footer{
+    background-color: #f8f8f8;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    height: 75px;
+}
+
+.social i{
+    border: 5px solid rgb(255, 106, 0) ;
+    border-radius: 20px;
+    background-color: rgb(255, 106, 0) ;
+    color: white;
+}
+
+.head i{
+    border: 5px solid rgb(255, 106, 0) ;
+    border-radius: 20px;
+    height: 20px;
+    background-color: rgb(255, 106, 0) ;
+    color: white;
+}

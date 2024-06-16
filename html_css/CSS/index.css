@@ -1,0 +1,147 @@
+/* #p1{
+    color:blueviolet;
+    background-color: white;
+    border: 1px solid blueviolet;
+    border-radius: 30px;
+} */
+
+/* *{
+    font-size: 20px;
+    background-color: beige;
+} */
+
+/* descendant selector */
+/* .main-div > h1{
+    background-color: bisque;
+    color: white;
+} */
+
+/* Adjacent */
+/* h2 + div {
+    background-color: rgb(234, 189, 234);
+    color: rgb(207, 119, 92);
+} */
+
+/* general sibling */
+/* h1 ~ h2{
+    color: rgb(197, 210, 221);
+}
+
+.main-div{
+    height: 500px;
+    background-image: url("https://us.123rf.com/450wm/shushanto/shushanto2209/shushanto220900703/191842443-destruction-of-planets-concept-art-illustration-background-image.jpg");
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+p{
+    color: wheat;
+} */
+
+/*display-none*/
+/* .demo{
+    /* display: none;
+    visibility: hidden;
+}*/
+
+/* relative position */
+/* .main-div{
+    background-color: tomato;
+    width: 200px;
+    height: 200px;
+}
+
+.second-div{
+    background-color: gray;
+    width: 60px;
+    height: 50px;
+    position: relative;
+    left: 60px;
+    top: 30px;
+} */
+
+/* absolute position */
+/* h1{
+    background-color: aquamarine;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+.main-div{
+    width: 800px;
+    height: auto;
+    position: relative;
+    background-color: rgb(233, 190, 233);
+}
+.second-div{
+    right: 0;
+
+
+} */
+
+/* .nav{
+    background-color: rgb(249, 217, 152);
+    list-style: none;
+    display: flex;
+}
+
+.logo{
+    display: flex;
+
+}
+
+.list{
+    justify-content: center;
+}
+
+.nav ul{
+    color: red;
+}
+
+.nav ul li{
+    display: inline-block;
+    padding: 0;
+}
+
+.nav ul li:hover{
+    color: green;
+    text-decoration: underline;
+} */
+
+/* grid */
+.grid-container{
+    background-color: rgb(249, 219, 139);
+    padding: 10px;
+    border: 2px solid white;
+    display: grid;
+    grid-template-columns: 1fr 2fr; /*to create column */
+    grid-template-rows: auto 1fr auto; /*for rows*/
+    gap: 10px;
+} 
+.header{
+    background-color: rgb(195, 241, 200);
+    grid-column: 1/3;  /*span across both columns*/
+    grid-row: 1; /*first row*/
+}
+.sidebar{
+    background-color: rgb(195, 241, 200);
+    grid-column: 1/2;
+    grid-row: 2;
+}
+.content{
+    background-color: rgb(195, 241, 200);
+    grid-column: 2/3;
+    grid-row: 2;
+}
+.footer{
+    background-color: rgb(195, 241, 200);
+    grid-column: 1/3;
+    grid-row: 4;
+}
+
+.header, .sidebar, .content, .footer{
+    margin: 5px;
+    height: 40px;
+    text-align: center;
+}

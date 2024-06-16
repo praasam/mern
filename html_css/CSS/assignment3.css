@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    height: 100vh;
+    background-color: #6e6eaa;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.nav h4{
+    color: #000000 ;
+    font-weight: 600;
+}
+.nav ul{
+    display: flex;
+
+}
+.nav ul li {
+    list-style: none;
+
+}
+.nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 16px;
+    margin-right: 25px;
+
+}
+
+.nav ul li:hover a{
+    color: #080500;
+
+}
+
+.nav ul li :last-child a {
+    margin: 0;
+}
+.hire-button{
+    background-color: #d9d7de;
+    padding: 6px 30px;
+    border: none;
+    font-size: 16px;
+    border-radius:6px ;
+}
+.main {
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main img{
+    width: 200px;
+    height: 200px;
+
+}
+.main h4{
+    font-size: 32px;
+    color:#ffffff;
+    font-weight: 600;
+
+
+}
+.main h4 span{
+    color: #080500
+
+}
+.main p.title{
+    font-size: 44px;
+    font-weight: 600;
+    color: aliceblue;
+    margin-top: 8px;
+}
+.main p.sub{
+    font-size: 16px;
+    color: #ccc;
+    margin-top: 20px;
+
+}
+
+.sep{
+    color: #ffffff;
+}
+.info{
+    color: #ffffff;
+}
+
+.knowledge{
+    color: #ffffff;
+}
+
+.port{
+    color: #ccc;
+}
+
+.knowledge h2{
+    color: #b79bff ;
+    font-weight: 600;
+}
+.sep h2{
+    color: #b79bff ;
+    font-weight: 600;
+}

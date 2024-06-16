@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1 id="title">Hello, World</h1>
+
+    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+    <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+
+    <p class="content">This is a paragraph.</p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <button id="btn">
+        Click Me
+    </button>
+
+    <input type="text" id="myinput" value="Hello,world"> -->
+
+
+    <!-- Manipulating element styles -->
+    <h2>JavaScript HTML Events</h2>
+    <p>Click the button to display the date.</p>
+    <button onclick="displayDate()">The time is?</button>
+    <button id="button">Click me</button>
+    <p id="demo"></p>    
+     <script>
+        function displayDate(){
+            document.getElementById("demo").innerHTML = Date();
+        }
+
+        // callback                                                 
+        button.addEventListener("click", function(){
+            alert("Button clicked");
+        })
+        button.style.color = "red";
+        button.style.fontSize = "20px";
+     </script>
+<!-- <script src="/js/dom.js"></script> -->
+</body>
+</html>

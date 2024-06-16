@@ -1,0 +1,23 @@
+#check:first-child{
+    color: rgb(20, 211, 20);
+    font-weight: bold;
+}
+#check:last-child{
+    color: rgb(158, 24, 24);
+    font-weight: bold;
+}
+#check:nth-child(3){
+    color: rgb(184, 95, 12);
+    font-weight: bold;
+}
+#check:nth-child(odd){
+    color: rgb(55, 43, 226);
+    font-weight: bold;
+}
+#check:nth-child(even){
+    color: rgb(168, 11, 108);
+    font-weight: bold;
+}
+input:focus {
+    border: 2px solid blue;
+    background-color: lightyellow;}
