@@ -2,12 +2,25 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    background-color: #f4f4f9;
+    background-color: rgb(236, 236, 228);
+}
+
+.background{
+    background-color: rgb(236, 236, 228);
+    height: auto;
+    width: 100%;
+}
+
+.background img{
+    width: 50%;
+    height: 500px;
+    margin-left: 600px;
 }
 
 h1 {
     text-align: center;
     color: #333;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 #search-bar {
@@ -19,10 +32,6 @@ h1 {
     box-sizing: border-box;
 }
 
-.buttons {
-    text-align: center;
-    margin-bottom: 20px;
-}
 
 button {
     padding: 10px 20px;
@@ -30,45 +39,21 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    background-color: #5cb85c;
-    color: white;
+    background-color: #ccc;
+    color: rgb(0, 0, 0);
     font-size: 16px;
 }
 
 button:hover {
-    background-color: #4cae4c;
+    background-color: #9e9a9a;
 }
 
 #book-list {
-    list-style-type: none;
-    padding: 0;
+    list-style-type:circle;
+    padding: 10;
 }
 
-.book {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
 
-.book span {
-    flex-grow: 1;
-}
-
-.favorite-btn {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 20px;
-}
-
-.favorite-btn:hover {
-    color: red;
-}
 
 .favorite {
     color: red;

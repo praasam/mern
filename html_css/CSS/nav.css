@@ -1,62 +1,64 @@
-nav{
-    background-color:blanchedalmond;
+nav {
+    background-color: blanchedalmond;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 10px;
 }
 
-.logo img{
+.logo img {
     height: 50px;
     width: 50px;
     border-radius: 50px;
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
     color: rgb(54, 150, 39);
-    background-color:bisque;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 10px;
 }
 
-.list a{
-    justify-content: space-between;
+.list {
+    display: flex;
+    align-items: center;
+}
+
+.list a {
     text-decoration: none;
-    /* margin-left: 20px; */
     padding: 20px;
 }
 
-.list a:hover{
+.list a:hover {
     color: tomato;
     text-decoration: underline;
 }
 
-.icon{
+.icon {
     display: none;
     cursor: pointer;
+    font-size: 30px;
 }
 
-.container{
+.container {
     height: auto;
     width: 350px;
     justify-content: center;
     align-items: center;
-    /* margin-left: 35%; */
     margin: 50px auto;
 }
 
-.register{
+.register {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(62, 62, 62, 0.1);
     border-radius: 10px;
 }
 
-.register h1{
+.register h1 {
     text-align: center;
 }
 
-.register label{
+.register label {
     margin-bottom: 5px;
     margin-left: 20px;
 }
@@ -70,7 +72,7 @@ nav{
     margin-left: 20px;
 }
 
-.register button{
+.register button {
     background-color: #007bff;
     width: 280px;
     padding: 10px;
@@ -81,42 +83,82 @@ nav{
     margin-left: 30px;
 }
 
-.register button:hover{
+.register button:hover {
     background-color: #ccc;
     color: black;
 }
 
-@media screen and (max-width: 700px){
-nav{
-    background-color: rgb(169, 169, 169);
-}
+@media screen and (max-width: 700px) {
+    nav {
+        background-color: rgb(169, 169, 169);
+        height: auto;
+    }
 
-    .logo{
+    .logo {
         color: rgb(0, 0, 0);
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        display: flex;
-        border: 0;
+        font-family: Georgia, 'Times New Roman', Times, serif;
         background-color: rgb(169, 169, 169);
     }
-    
 
-    .list a{
-        display: block;
+    .list {
+        display: none;
         flex-direction: column;
-        color:rgb(6, 6, 6);
-        padding: 0;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
     }
 
-    .icon{
+    .list a {
         display: block;
+        color: rgb(6, 6, 6);
+        padding: 10px 0;
+        margin: 0;
     }
 
-    .register h1{
-        color:#007bff;
+    .list a:hover {
+        color: #050381;
     }
 
-    .register button:hover{
-         background-color: burlywood;
-         color: black;
+    .icon {
+        display: block;
+        margin-left: 100px;
+    }
+
+    .container {
+        height: 300px;
+        width: 300px;
+    }
+
+    .register h1 {
+        color: #007bff;
+    }
+
+    .register input {
+        width: 230px;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-left: 20px;
+    }
+
+    .register button {
+        background-color: #007bff;
+        width: 240px;
+        color: white;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .register button:hover {
+        background-color: burlywood;
+        color: black;
+    }
+
+    .list.show {
+        display: flex;
     }
 }

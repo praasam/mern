@@ -1,0 +1,39 @@
+.container {
+    height: auto;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;    
+}
+
+h1{
+    text-align: center;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(255, 255, 255, 0.644);
+    box-shadow: 0 0 10px rgba(15, 15, 15, 0.1);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.contact input{
+    padding: 10px;
+    margin: 10px;
+}
+
+.contact label{
+    margin-left: 20px;
+}
+
+.contact button{
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(65, 65, 255);
+    border: none ;
+    color: white;
+    border-radius: 2px;
+}
+

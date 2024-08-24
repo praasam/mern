@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <link rel="stylesheet" href="/html_css/CSS/animation_assign.css">
+</head>
+<body>
+    <h1>CSS Animation</h1>
+    <!-- 1. Animated button hover effect -->
+    <hr>
+     <button class="animated-button">Button hover</button>
+
+    <hr>
+     <!-- 2. Pulsating circle -->
+      <div class="pulsating-circle"></div> <hr>
+
+      <!-- 3. Bouncing ball -->
+       <div class="container">
+        <div class="ball"></div>
+       </div> <hr>
+
+       <!-- 4. Fade-in image gallery -->
+        <div class="image-gallery">
+            <img src="https://i.pinimg.com/564x/fc/65/d8/fc65d82918ab4a2bbeb82c72df13a7d6.jpg" alt="">
+            <img src="https://i.pinimg.com/736x/8d/c7/55/8dc7552488781606c38ba3b21268157d.jpg" alt="">
+            <img src="https://i.pinimg.com/474x/a4/ea/6e/a4ea6ed6fdcd40421f53d0392538e988.jpg" alt="">
+        </div> <hr>
+
+        <!-- 5.Sliding text -->
+        <div class="marquee-container">
+            <div class="marquee">
+                <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, nihil.</span>
+            </div>
+        </div><hr>
+
+
+        <!-- 6. Rotating Card -->
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">
+                This is front side
+            </div>
+            <div class="card-back">
+                This is back side
+            </div>
+        </div>
+    </div> <hr>
+ 
+    <!-- 7. Loading Spinner -->
+    <div class="spinner"></div> <hr>
+
+    <!-- 8. Expanding Accordion Menu -->
+        <div class="accordion">
+        <div class="accordion-item">
+            <div class="accordion-header">Section 1</div>
+            <div class="accordion-content">
+                <p>Content</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-header">Section 2</div>
+            <div class="accordion-content">
+                <p>Content</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-header">Section 3</div>
+            <div class="accordion-content">
+                <p>Content</p>
+            </div>
+        </div>
+    </div> <hr>
+
+    <!-- 9. Animated Progress Bar -->
+    <div class="progress-bar-container">
+        <div class="progress-bar"></div>
+    </div> <hr>
+
+    <!-- 10. Animated Navigation Menu -->
+    <div class="nav-container">
+        <div class="nav-toggle">Toggle Menu</div>
+        <div class="nav-menu">
+            <ul>
+                <li>Home</li>
+                <li>About us</li>
+                <li>Our Services</li>
+                <li>Contact us</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for Expanding Accordion Menu
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const accordionItem = header.parentElement;
+                const openItem = document.querySelector('.accordion-item.active');
+
+                if (openItem && openItem !== accordionItem) {
+                    openItem.classList.toggle('active');
+                }
+
+                accordionItem.classList.toggle('active');
+            });
+        });
+
+        // JavaScript for Animated Navigation Menu
+        document.querySelector('.nav-toggle').addEventListener('click', () => {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>

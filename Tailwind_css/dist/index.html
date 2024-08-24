@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GizmoHub - GizmoMax</title>
+  <link href="/Tailwind_css/dist/style.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Header Section -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <a href="#" class="text-2xl font-bold">GizmoHub</a>
+      <nav class="hidden md:flex space-x-4">
+        <a href="#home" class="hover:text-blue-500">Home</a>
+        <a href="#product" class="hover:text-blue-500">Product</a>
+        <a href="#reviews" class="hover:text-blue-500">Reviews</a>
+        <a href="#contact" class="hover:text-blue-500">Contact</a>
+      </nav>
+      <button id="menu-btn" class="md:hidden text-xl">
+        ☰
+      </button>
+    </div>
+    <div id="menu" class="md:hidden">
+      <a href="#home" class="block py-2 px-4">Home</a>
+      <a href="#product" class="block py-2 px-4">Product</a>
+      <a href="#reviews" class="block py-2 px-4">Reviews</a>
+      <a href="#contact" class="block py-2 px-4">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-blue-500 text-white text-center py-20">
+    <h1 class="text-4xl font-bold">Discover GizmoMax</h1>
+    <p class="mt-4">The ultimate tech gadget for your needs</p>
+    <button class="mt-8 bg-white text-blue-500 font-bold py-2 px-4 rounded">
+      Learn More
+    </button>
+  </section>
+
+  <!-- Product Details Section -->
+  <section id="product" class="container mx-auto my-20 p-4">
+    <div class="flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2">
+        <img src="gizmomax.jpg" alt="GizmoMax" class="w-full h-auto">
+      </div>
+      <div class="md:w-1/2 md:pl-10 mt-10 md:mt-0">
+        <h2 class="text-3xl font-bold">GizmoMax</h2>
+        <p class="mt-4">An innovative tech gadget that offers incredible features to make your life easier.</p>
+        <ul class="mt-4 list-disc list-inside">
+          <li>Feature 1</li>
+          <li>Feature 2</li>
+          <li>Feature 3</li>
+          <li>Feature 4</li>
+        </ul>
+        <p class="mt-4 text-2xl font-bold">$199.99</p>
+        <button class="mt-4 bg-blue-500 text-white font-bold py-2 px-4 rounded">
+          Buy Now
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Reviews Section -->
+  <section id="reviews" class="bg-gray-100 py-20">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold">What Our Customers Say</h2>
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded shadow">
+          <p>"GizmoMax is fantastic! It has changed my life."</p>
+          <p class="mt-2 font-bold">- Customer A</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow">
+          <p>"I love using GizmoMax every day. Highly recommend it!"</p>
+          <p class="mt-2 font-bold">- Customer B</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow">
+          <p>"Amazing gadget with great features."</p>
+          <p class="mt-2 font-bold">- Customer C</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container mx-auto my-20 p-4">
+    <h2 class="text-3xl font-bold text-center">Get in Touch</h2>
+    <form class="mt-8 max-w-lg mx-auto bg-white p-6 rounded shadow">
+      <div class="mb-4">
+        <label for="name" class="block text-sm font-bold">Name</label>
+        <input type="text" id="name" class="mt-1 p-2 w-full border rounded">
+      </div>
+      <div class="mb-4">
+        <label for="email" class="block text-sm font-bold">Email</label>
+        <input type="email" id="email" class="mt-1 p-2 w-full border rounded">
+      </div>
+      <div class="mb-4">
+        <label for="message" class="block text-sm font-bold">Message</label>
+        <textarea id="message" class="mt-1 p-2 w-full border rounded"></textarea>
+      </div>
+      <button type="submit" class="bg-blue-500 text-white font-bold py-2 px-4 rounded">
+        Send
+      </button>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 GizmoHub. All rights reserved.</p>
+      <div class="mt-4">
+        <a href="#" class="mx-2">Facebook</a>
+        <a href="#" class="mx-2">Twitter</a>
+        <a href="#" class="mx-2">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+
+    menuBtn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>

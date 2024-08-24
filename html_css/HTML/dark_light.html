@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel with Dark and Light Mode</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
+    <link rel="stylesheet" href="/CSS/dark_light.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="navbar-title">Classic Canvas</h1>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div>
+                <button id="theme-toggle" aria-label="Toggle Theme">🌓</button>
+            </div>
+            <div class="menu-icon" id="menu-icon" aria-label="Toggle Menu">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="carousel">
+            <div class="slides">
+                <div class="slide active" style="background-image: url('https://i.pinimg.com/564x/44/b4/10/44b410a19ba61d79cd407221784fd6f8.jpg');"></div>
+                <div class="slide" style="background-image: url('https://i.pinimg.com/474x/a1/a8/42/a1a842b4254e1c79b2491caa0f5520e1.jpg');"></div>
+                <div class="slide" style="background-image: url('https://i.pinimg.com/474x/54/c6/0b/54c60be445d963225319483045a83d15.jpg');"></div>
+            </div>
+            <div class="controls">
+                <button class="prev" aria-label="Previous Slide">❮</button>
+                <button class="next" aria-label="Next Slide">❯</button>
+            </div>
+            <div class="indicators">
+                <span class="indicator active" data-slide="0"></span>
+                <span class="indicator" data-slide="1"></span>
+                <span class="indicator" data-slide="2"></span>
+            </div>
+        </section>
+
+        <section class="cards">
+            <div class="card">
+                <h2>Art Gallery</h2>
+                <p>Explore a collection of classic and contemporary art pieces.</p>
+            </div>
+            <div class="card">
+                <h2>Exhibitions</h2>
+                <p>Discover our upcoming and past exhibitions.</p>
+            </div>
+            <div class="card">
+                <h2>Artists</h2>
+                <p>Learn more about the artists and their works on display.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+
+    <script src="/js/dark_light.js"></script>
+</body>
+</html>

@@ -7,14 +7,21 @@
     <link rel="stylesheet" href="/css/book.css">
 </head>
 <body>
-    <h1>The Book Haven</h1>
-    <input type="text" id="search-bar" placeholder="Search for books...">
-    <div class="buttons">
-        <button id="add-book-btn">Add Book</button>
-        <button id="remove-book-btn">Remove Book</button>
+    <div class="background">
+        <h1>The Book Haven</h1>
+        <img src="/books.png" alt="">       
     </div>
-    <ul id="book-list"></ul>
+    
+    <input type="text" id="search-bar" placeholder="Search for a book">
+    <button onclick="searchBook()">Search</button>
+    <ul id="book-list">      
+        
+    </ul>
+    <button onclick="addBook()">Add Book</button>
+    <button onclick="removeBook()">Remove Last Book</button>
 
     <script src="/js/book.js"></script>
 </body>
 </html>
+
+

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GizmoHub - GizmoMax</title>
+    <script src="https://cdn.tailwindcss.com/?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+</head>
+<body class="font-sans">
+    <!-- Header Section -->
+    <header class="bg-gray-800 text-white p-4 flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+            <img src="/GizmoHub/logo.jpg" alt="" class="h-14 rounded-full">
+            <div class="text-2xl font-bold">GizmoHub</div>
+        </div>
+        <nav class="hidden md:flex space-x-4">
+            <a href="#home" class="hover:underline">Home</a>
+            <a href="#product" class="hover:underline">Product</a>
+            <a href="#reviews" class="hover:underline">Reviews</a>
+            <a href="#contact" class="hover:underline">Contact</a>
+        </nav>
+        <button class="md:hidden text-2xl">&#9776;</button>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="h-screen flex flex-col justify-center items-center text-center"
+    style="background-image: url('https://st2.depositphotos.com/1000163/6911/i/450/depositphotos_69115045-stock-photo-overhead-of-office-table-with.jpg'); background-size: cover; background-position: center;">
+<h1 class="text-4xl font-bold mb-4 text-black">GizmoHub</h1>
+<p class="text-lg mb-6 text-black">Innovate Your World.</p>
+<a href="#product" class="bg-gray-300 text-blue-600 px-4 py-2 rounded hover:bg-gray-200">Learn More</a>
+</section>
+
+
+    <!-- Product Details Section -->
+    <section id="product" class="py-12 px-4 bg-gray-100">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6">GizmoMax Features</h2>
+            <p class="text-lg mb-8">Experience cutting-edge technology with GizmoMax. Here are some of its key features:</p>
+            <div class="flex flex-wrap justify-center items-center mb-8">
+                <div class="w-full md:w-1/2 p-4">
+                    <img src="https://i.pinimg.com/564x/e4/22/d5/e422d592f90e5d833e27f6c97ecd4dce.jpg" alt="GizmoMax" class="w-full rounded-lg">
+                </div>
+                <div class="w-full md:w-1/2 p-4 text-left">
+                    <ul class="list-disc list-inside text-lg">
+                        <li>Advanced AI Integration</li>
+                        <li>High-Resolution Display</li>
+                        <li>Long Battery Life</li>
+                        <li>Fast Charging Capability</li>
+                    </ul>
+                    <div class="mt-6 text-2xl font-bold">Rs.20,000</div>
+                    <a href="#" class="mt-4 bg-green-500 text-white px-6 py-3 rounded-full inline-block">Buy Now</a>
+                </div>
+            </div>
+            <div class="carousel flex space-x-4 overflow-x-auto p-4">
+                <img src="https://img.freepik.com/premium-photo/futuristic-gadgets-showcase-lineup-sleek-modern-technological-devices_977107-679.jpg" alt="GizmoMax Image 1" class="w-1/3 rounded-lg">
+                <img src="https://images.unsplash.com/photo-1468495244123-6c6c332eeece?fm=jpg&w=3000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FkZ2V0fGVufDB8fDB8fHww" alt="GizmoMax Image 2" class="w-1/3 rounded-lg">
+                <img src="https://media.licdn.com/dms/image/D5612AQEOZLI9YAjT8g/article-cover_image-shrink_600_2000/0/1705414661233?e=2147483647&v=beta&t=fo1C35ToIQZ5PSPm87bJPBAElhsratEQlcwd23igrUs" alt="GizmoMax Image 3" class="w-1/3 rounded-lg">
+                <img src="https://assets.aboutamazon.com/dims4/default/e41d188/2147483647/strip/true/crop/1599x900+1+0/resize/1240x698!/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F87%2Ffb%2F7c6b10b84236a62e7f9e5dbd92ed%2Ftech-gadgets.jpg" alt="GizmoMax Image 4" class="w-1/3 rounded-lg">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/gh-office-gadgets-66042b2e9168c.png?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*" alt="GizmoMax Image 5" class="w-1/3 rounded-lg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section id="reviews" class="py-12 px-4 bg-white">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6">What Our Customers Say</h2>
+            <div class="flex flex-wrap justify-center">
+                <div class="w-full md:w-1/3 p-4">
+                    <blockquote class="border-l-4 border-blue-500 pl-4">
+                        <p class="italic mb-2">"GizmoMax is amazing! It has changed the way I work."</p>
+                        <footer class="text-sm">- Aasma Subba</footer>
+                    </blockquote>
+                </div>
+                <div class="w-full md:w-1/3 p-4">
+                    <blockquote class="border-l-4 border-blue-500 pl-4">
+                        <p class="italic mb-2">"The best investment I've made this year. Highly recommended!"</p>
+                        <footer class="text-sm">- Deeshri Thapa</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-12 px-4 bg-gray-100">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6">Get in Touch</h2>
+            <form class="space-y-4">
+                <div>
+                    <input type="text" placeholder="Name" class="w-full px-4 py-2 border border-gray-300 rounded-lg">
+                </div>
+                <div>
+                    <input type="email" placeholder="Email" class="w-full px-4 py-2 border border-gray-300 rounded-lg">
+                </div>
+                <div>
+                  <input type="text" placeholder="Phone Number" class="w-full px-4 py-2 border border-gray-300 rounded-lg">
+              </div>
+                <div>
+                    <textarea placeholder="Message" class="w-full px-4 py-2 border border-gray-300 rounded-lg"></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded-full">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white p-4 text-center">
+        <div class="mb-4">
+        </div>
+        <div>&copy; 2024 GizmoHub. All rights reserved.</div>
+    </footer>
+
+    <!-- Responsive Menu Script -->
+    <script>
+        document.querySelector('header button').addEventListener('click', () => {
+            document.querySelector('nav').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

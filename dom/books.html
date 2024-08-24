@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Book List</h1>
+    <input type="text" id="search-bar" placeholder="Search for a book">
+    <button onclick="searchBook()">Search</button>
+    <button onclick="clearSearchHighlights()">Clear Search Highlights</button>
+    <ul id="book-list">
+        <li>The Great Gatsby</li>
+        <li>To Kill a Mockingbird</li>
+        <li>1984</li>
+        <li>Pride and Prejudice</li>
+        <li>The Catcher in the Rye</li>
+        <li>The Hobbit</li>
+        <li>The Lord of the Rings</li>
+    </ul>
+    <button onclick="addBook()">Add Book</button>
+    <button onclick="removeBook()">Remove Last Book</button>
+
+    <script src="/books.js"></script>
+</body>
+</html>
